@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alexa_tutor_appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-xh-2SS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdT-ME-Efj" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlexaTutor" translatesAutoresizingMaskIntoConstraints="NO" id="JCX-K3-bP5">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="JCX-K3-bP5" secondAttribute="bottom" id="4Jv-32-dLC"/>
+                                            <constraint firstItem="JCX-K3-bP5" firstAttribute="leading" secondItem="PdT-ME-Efj" secondAttribute="leading" id="Oel-OE-cyv"/>
+                                            <constraint firstItem="JCX-K3-bP5" firstAttribute="top" secondItem="PdT-ME-Efj" secondAttribute="top" id="ptJ-8W-p8k"/>
+                                            <constraint firstAttribute="trailing" secondItem="JCX-K3-bP5" secondAttribute="trailing" id="xFs-mg-e4q"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCi-hf-3Tn" userLabel="Midlle">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WRR-XD-CGf">
+                                                <rect key="frame" x="10" y="5" width="355" height="151.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XiU-MB-h5A" userLabel="User-name">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="47"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-HP-kwm" userLabel="Password">
+                                                        <rect key="frame" x="0.0" y="52" width="355" height="47.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kZq-sk-ZLw">
+                                                        <rect key="frame" x="0.0" y="104.5" width="355" height="47"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEi-mY-cbG" userLabel="sign-up">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="47"/>
+                                                                <state key="normal" title="Sign Up"/>
+                                                                <connections>
+                                                                    <segue destination="xzx-6v-GrN" kind="show" id="HfB-1f-KIC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-iv-39d" userLabel="sign-in">
+                                                                <rect key="frame" x="180" y="0.0" width="175" height="47"/>
+                                                                <state key="normal" title="Sign In"/>
+                                                                <connections>
+                                                                    <segue destination="xzx-6v-GrN" kind="show" id="BUH-gs-WNk"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="WRR-XD-CGf" secondAttribute="bottom" constant="5" id="Dmh-qH-4Kh"/>
+                                            <constraint firstAttribute="trailing" secondItem="WRR-XD-CGf" secondAttribute="trailing" constant="10" id="W2b-AV-5fI"/>
+                                            <constraint firstItem="WRR-XD-CGf" firstAttribute="leading" secondItem="uCi-hf-3Tn" secondAttribute="leading" constant="10" id="aUx-1P-Cen"/>
+                                            <constraint firstItem="WRR-XD-CGf" firstAttribute="top" secondItem="uCi-hf-3Tn" secondAttribute="top" constant="5" id="zXT-c2-y5d"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGF-q6-aao" userLabel="Buttom">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="162"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07q-9z-exf" userLabel="Buttom">
+                                        <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZiE-xh-2SS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0xr-07-9pA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZiE-xh-2SS" secondAttribute="bottom" id="MX9-45-7px"/>
+                            <constraint firstItem="ZiE-xh-2SS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mrt-cz-ydz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZiE-xh-2SS" secondAttribute="trailing" id="wFu-qw-j9U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="Y6Z-x2-vgu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-636"/>
+        </scene>
+        <!--Tutors-->
+        <scene sceneID="j2U-7y-rFh">
+            <objects>
+                <tableViewController id="2Cb-5O-P2Z" customClass="AppointmentTableViewController" customModule="alexa_tutor_appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wDJ-zW-c5A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTutorCell" id="gH9-AC-hcN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gH9-AC-hcN" id="8uM-kc-vHQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2Cb-5O-P2Z" id="MbA-LX-d9N"/>
+                            <outlet property="delegate" destination="2Cb-5O-P2Z" id="qBf-JP-Sf3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tutors" id="NJW-HJ-2rc">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="smC-u6-7nC">
+                            <connections>
+                                <action selector="logOutPressed:" destination="2Cb-5O-P2Z" id="9Dl-aF-ZVj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="tCd-ji-xOb">
+                            <connections>
+                                <action selector="filterButtonPressed:" destination="2Cb-5O-P2Z" id="96q-6R-YfG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3R-SB-yrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-636"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8QN-Yb-52z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzx-6v-GrN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3iJ-3m-LPJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Cb-5O-P2Z" kind="relationship" relationship="rootViewController" id="YGw-GO-vpr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7g-SK-ui6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="-636"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlexaTutor" width="400" height="266.5"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="BUH-gs-WNk"/>
+    </inferredMetricsTieBreakers>
+</document>
